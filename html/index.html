@@ -19,29 +19,46 @@
             <div class="nome-campus">Campus Rio Largo</div>
         </div>
 
-        <div class="semestre-atual">Semestre atual: <div id="semestre-atual"></div></div>
+        <div class="semestre-atual">Semestre atual: <div id="semestre-atual"></div>
+        </div>
     </header>
 
-    <section class="menu-lateral">
-        <div class="modo-escuro">Modo escuro: </div></div><div>
-        <div class="opcoes-menu-lateral">
-            <i class="fa-solid fa-book icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> Ensino
+    <section class="menu-lateral expandido">
+        <div class="logo">
+            <!-- <img src="/icons/IFAL_RioLargo_vertical_branco.png" alt=""> -->
         </div>
-        <div class="opcoes-menu-lateral">
-            <i class="fa-solid fa-flask icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> Pesquisa
+        <div class="botoes-apoio">
+            <i class="fa-solid fa-arrow-right fa-2xl icon-menu-lateral" id="toggleButton" style="color: #14d16f;"></i>
+            <div class="modo-escuro">Modo escuro: </div>
         </div>
-        <div class="opcoes-menu-lateral">
-            <i class="fa-solid fa-house-laptop icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> Extensão
+
         </div>
-        <div class="opcoes-menu-lateral">
-            <i class="fa-solid fa-chalkboard-user icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> Ações associadas
-        </div>
-        <div class="opcoes-menu-lateral">
-            <i class="fa-solid fa-book-open icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> Biblioteca
-        </div>
-        <div class="opcoes-menu-lateral">
-            <i class="fa-solid fa-sack-dollar icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> Bolsa/Auxílio
-        </div>
+        <div class="opcoes">
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-book icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> <span>Ensino</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-flask icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> <span>Pesquisa</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-house-laptop icon-menu-lateral fa-2xl" style="color: #14d16f;"></i>
+                <span>Extensão</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-chalkboard-user icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> <span>Ações
+                    associadas</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-book-open icon-menu-lateral fa-2xl" style="color: #14d16f;"></i>
+                <span>Biblioteca</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-sack-dollar icon-menu-lateral fa-2xl" style="color: #14d16f;"></i>
+                <span>Bolsa/Auxílio</span>
+            </div>
+            <div class="opcoes-menu-lateral final">
+                <i class="fa-solid fa-gear fa-2xl" style="color: #b5b5b5;"></i>
+            </div>
     </section>
 
     <footer>
@@ -49,6 +66,7 @@
 
     <!-- Scripts -->
     <script src="/js/semestreAtual.js"></script>
+    <script src="/js/controladorBarraLateral.js"></script>
 </body>
 
 </html>
