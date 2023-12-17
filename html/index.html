@@ -8,61 +8,83 @@
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/949f4682ad.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="info-aluno">
-            <div class="nome-aluno">Vitor Gabriel</div>
-            <div class="nome-campus">Campus Rio Largo</div>
-        </div>
-
-        <div class="semestre-atual">Semestre atual: <div id="semestre-atual"></div>
-        </div>
-    </header>
-
-    <section class="menu-lateral expandido">
+    <aside class="menu-lateral expandido">
         <div class="logo">
             <!-- <img src="/icons/IFAL_RioLargo_vertical_branco.png" alt=""> -->
         </div>
         <div class="botoes-apoio">
             <i class="fa-solid fa-arrow-right fa-2xl icon-menu-lateral" id="toggleButton" style="color: #14d16f;"></i>
-            <div class="modo-escuro">Modo escuro: </div>
         </div>
 
         </div>
         <div class="opcoes">
             <div class="opcoes-menu-lateral">
-                <i class="fa-solid fa-book icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> <span>Ensino</span>
+                <i class="fa-solid fa-book icon-menu-lateral fa-xl" style="color: #14d16f;"></i> <span>Ensino</span>
             </div>
             <div class="opcoes-menu-lateral">
-                <i class="fa-solid fa-flask icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> <span>Pesquisa</span>
+                <i class="fa-solid fa-flask icon-menu-lateral fa-xl" style="color: #14d16f;"></i> <span>Pesquisa</span>
             </div>
             <div class="opcoes-menu-lateral">
-                <i class="fa-solid fa-house-laptop icon-menu-lateral fa-2xl" style="color: #14d16f;"></i>
+                <i class="fa-solid fa-house-laptop icon-menu-lateral fa-xl" style="color: #14d16f;"></i>
                 <span>Extensão</span>
             </div>
             <div class="opcoes-menu-lateral">
-                <i class="fa-solid fa-chalkboard-user icon-menu-lateral fa-2xl" style="color: #14d16f;"></i> <span>Ações
+                <i class="fa-solid fa-chalkboard-user icon-menu-lateral fa-xl" style="color: #14d16f;"></i> <span>Ações
                     associadas</span>
             </div>
             <div class="opcoes-menu-lateral">
-                <i class="fa-solid fa-book-open icon-menu-lateral fa-2xl" style="color: #14d16f;"></i>
+                <i class="fa-solid fa-book-open icon-menu-lateral fa-xl" style="color: #14d16f;"></i>
                 <span>Biblioteca</span>
             </div>
             <div class="opcoes-menu-lateral">
-                <i class="fa-solid fa-sack-dollar icon-menu-lateral fa-2xl" style="color: #14d16f;"></i>
+                <i class="fa-solid fa-sack-dollar icon-menu-lateral fa-xl" style="color: #14d16f;"></i>
                 <span>Bolsa/Auxílio</span>
             </div>
             <div class="opcoes-menu-lateral final">
-                <i class="fa-solid fa-gear fa-2xl" style="color: #b5b5b5;"></i>
+                <i class="fa-solid fa-gear icon-menu-lateral fa-xl" style="color: #b5b5b5;"></i>
+                <span>Configurações</span>
             </div>
-    </section>
+    </aside>
 
-    <footer>
-    </footer>
+    <main>
+        <header>
+            <div class="info-aluno">
+                <div class="nome-aluno">Vitor Gabriel</div>
+                <div class="nome-campus">Campus Rio Largo</div>
+            </div>
+            <div class="semestre-atual">Semestre atual: <div id="semestre-atual"></div>
+            </div>
+        </header>
+        <section class="perfil-aluno box config-geral">
+            <div class="infos">
+                <div class="nome">Olá, Vitor!</div>
+                <div class="num-matricula">2022304623</div>
+            </div>
+            <div class="foto">
+                <img src="/icons/VITOR GABRIEL DA SILVA SANTOS.png" alt="">
+            </div>
+        </section>
+        <section class="noticias box config-geral">
+            <div class="noticia">
+                Não há noticias cadastradas.
+            </div>
+        </section>
+        <section class="atualizacoes box config-geral">
+            <div class="cabecalho">
+                Últimas atualizações:
+            </div>
+            <div class="conteudo-atualizacoes">
+                <div>17/12/2023 - <strong>Sistemas Operacionais</strong></div>
+                <div>Nova notícia: Apresentação de trabalhos.</div>
+            </div>
+        </section>
+    </main>
 
     <!-- Scripts -->
     <script src="/js/semestreAtual.js"></script>

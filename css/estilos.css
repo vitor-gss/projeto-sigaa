@@ -3,20 +3,31 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "sidebar main";
+
+    /* overflow: hidden; */
 }
 
-/* Header*/
+/* Main*/
+main {
+    display: block;
+    padding: 20px 30px 30px 30px;
+}
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    position: relative;
+    /* position: relative; */
     z-index: 1;
 
     padding-bottom: 20px;
+
+    border-bottom: 2px solid white;
 }
 
 .info-aluno {
@@ -31,7 +42,7 @@ header {
 
 /* Menu lateral*/
 
-.logo img{
+.logo img {
     max-width: 40%;
 }
 
@@ -50,8 +61,8 @@ header {
     display: flex;
     flex-direction: column;
 
-    position: relative;
     z-index: 2;
+    grid-area: sidebar;
 
     border-radius: 10px;
     gap: 10px;
@@ -67,7 +78,7 @@ header {
 
 .icon-menu-lateral {
     width: 30px;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .modo-escuro {
@@ -83,13 +94,16 @@ header {
     transition: margin 0.3s;
 }
 
+span {
+    padding-right: 20px;
+}
 
 .menu-lateral.retraido {
-    width: 4%;
+    /* width: 4%; */
 }
 
 .menu-lateral.expandido {
-    width: 20%;
+    /* width: 20%; */
 }
 
 .menu-lateral.retraido .opcoes .opcoes-menu-lateral span,
@@ -97,6 +111,65 @@ header {
     display: none
 }
 
-.final{
+.final {}
 
+/* Box */
+.box {
+    background-color: #161515;
+    color: white;
+
+    border-radius: 8px;
+}
+
+/* Perfil aluno */
+.perfil-aluno{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 15%;
+}
+
+.foto>img{
+    object-fit: cover;
+    border-radius: 100px;
+    max-height: 100%;
+}
+
+.infos{
+
+}
+
+/* Noticias */
+.noticias {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+}
+
+/* Atualizações */
+.cabecalho {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo-atualizacoes {
+    display: flex;
+    flex-direction: column  ;
+
+    gap: 10px;
+}
+
+strong:hover{
+    cursor: pointer;
+    color: #14d16f;
+}
+
+.config-geral {
+    margin-top: 20px;
+    padding: 20px;
 }
