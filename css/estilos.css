@@ -125,12 +125,14 @@ span {
 .perfil-aluno{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 10px;
 
     float: right;
     margin-left: 20px;
     margin-bottom: 20px;
     height: 15%;
+    max-width: 25%;
 }
 
 .foto>img{
@@ -140,7 +142,17 @@ span {
 }
 
 .infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
 
+.infos>.nome{
+    font-size: 120%;
+}
+.infos>.nome>span{
+    color: #14d16f;
 }
 
 /* Noticias */
