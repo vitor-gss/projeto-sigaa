@@ -19,7 +19,7 @@
             <!-- <img src="/icons/IFAL_RioLargo_vertical_branco.png" alt=""> -->
         </div>
         <div class="botoes-apoio">
-            <i class="fa-solid fa-arrow-right fa-2xl icon-menu-lateral" id="toggleButton" style="color: #14d16f;"></i>
+            <i class="fa-solid fa-arrow-right fa-xl icon-menu-lateral" id="toggleButton" style="color: #14d16f;"></i>
         </div>
 
         </div>
@@ -54,13 +54,23 @@
 
     <main>
         <header>
-            <div class="info-aluno">
-                <div class="nome-aluno">Vitor Gabriel</div>
-                <div class="nome-campus">Campus Rio Largo</div>
+            <div class="info-instituicao">
+                IFAL - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
             </div>
-            <div class="semestre-atual">Semestre atual: <div id="semestre-atual"></div>
+            <div class="info-header">
+                <div class="info-aluno">
+                    <div class="nome-aluno">Vitor Gabriel</div>
+                    <div class="nome-campus">Campus Rio Largo</div>
+                </div>
+                <div class="semestre-atual">
+                    Semestre atual: <div id="semestre-atual"></div>
+                </div>
+                <div class="caixa-postal">
+                    <i class="fa-solid fa-envelope" style="color: #14d16f;"></i> Suas mensagens
+                </div>
             </div>
         </header>
+
         <section class="perfil-aluno box config-geral">
             <div class="infos">
                 <div class="nome">Olá, <span>Chipi Chipi!</span></div>
@@ -70,11 +80,13 @@
                 <img src="../icons/chipi.jpg" alt="">
             </div>
         </section>
+
         <section class="noticias box config-geral">
             <div class="noticia">
                 Não há noticias cadastradas.
             </div>
         </section>
+
         <section class="atualizacoes box config-geral">
             <div class="cabecalho">
                 Últimas atualizações:
@@ -84,11 +96,22 @@
                 <div>Nova notícia: Apresentação de trabalhos.</div>
             </div>
         </section>
+
+        <section class="disciplinas box config-geral">
+            <header>
+                <div>Disciplinas</div>
+                <div>Local</div>
+            </header>
+            <div class="lista-disciplinas" id="lista-disciplina">
+                
+            </div>
+        </section>
     </main>
 
     <!-- Scripts -->
     <script src="../js/semestreAtual.js"></script>
     <script src="../js/controladorBarraLateral.js"></script>
+    <script src="../js/disciplinas.js"></script>
 </body>
 
 </html>
