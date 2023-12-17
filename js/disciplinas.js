@@ -59,11 +59,11 @@ function criarContainerDeCards(card) {
     for (const disciplina of disciplinas.listaDeDisciplinas) {
         card.innerHTML += `
         <div class='disciplina'>
-            <div class= 'nome-disciplina'>${disciplina.nome}</div> 
+            <div class='nome-disciplina'><strong>${disciplina.nome}</strong></div> 
             <div class='local-disciplina'>${disciplina.local}</div> 
         </div>
         `
     }
 }
 
-criarContainerDeCards(document.querySelector('#lista-disciplina'))
+criarContainerDeCards(document.querySelector('#lista-disciplinas'))
