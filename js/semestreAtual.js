@@ -12,10 +12,6 @@ local.textContent = semestreAtual
 
 anoAtual.textContent = ano
 
-const segundos = data.getSeconds()
-const minutos = data.getMinutes()
-const hora = data.getHours()
-
 const dia = data.getDate()
 const mes = data.getMonth()
 
@@ -27,11 +23,16 @@ dataAtual.textContent = `${formatarHorario(dia)}/${formatarHorario(mes)}/${forma
 
 
 const atualizarHora = () => {
+    const data = new Date()
+    const hora = data.getHours()
+    const minutos = data.getMinutes()
+    const segundos = data.getSeconds()
+
     horaAtual.textContent = `${formatarHorario(hora)}:${formatarHorario(minutos)}:${formatarHorario(segundos)}`  
 }
 
 
-setInterval(atualizarHora(), 1000)
+setInterval(atualizarHora, 1000)
 
 
 
