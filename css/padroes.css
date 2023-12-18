@@ -37,6 +37,10 @@ body {
     border-radius: 8px;
 }
 
+#hd{
+    background-color: #1b1b1b;
+}
+
 .info-box-row{
     display: flex;
     flex-direction: row;
