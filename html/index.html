@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/padroes.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Fim CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -46,20 +49,21 @@
                 <i class="fa-solid fa-sack-dollar icon-menu-lateral fa-xl" style="color: #14d16f;"></i>
                 <span>Bolsa/Auxílio</span>
             </div>
-            <div class="opcoes-menu-lateral final">
-                <i class="fa-solid fa-gear icon-menu-lateral fa-xl" style="color: #b5b5b5;"></i>
-                <span>Configurações</span>
-            </div>
+        </div>
+        <div class="opcoes-menu-lateral final">
+            <i class="fa-solid fa-gear icon-menu-lateral fa-xl" style="color: #b5b5b5;"></i>
+            <span>Configurações</span>
+        </div>
     </aside>
 
-    <main>
+    <main class="main-ret">
         <header>
-            <div class="info-instituicao">
+            <div class="info-instituicao cabecalho">
                 IFAL - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
             </div>
             <div class="info-header">
                 <div class="info-aluno">
-                    <div class="nome-aluno">Vitor Gabriel</div>
+                    <div class="nome-aluno">Chipi Chipi Chapa Chapa</div>
                     <div class="nome-campus">Campus Rio Largo</div>
                 </div>
                 <div class="semestre-atual">
@@ -98,20 +102,37 @@
         </section>
 
         <section class="disciplinas">
-            <header>
+            <header class="cabecalho">
                 <div>Disciplinas</div>
                 <div>Local</div>
             </header>
             <div class="lista-disciplinas" id="lista-disciplinas">
-
             </div>
         </section>
+
+        <section class="trabalhos box-cabecalho">
+            <div class="cabecalho">
+                <div class="nome-trabalho">Trabalho</div>
+                <div class="prazos">Prazo de entrega</div>
+            </div>
+            <div class="trabalho info-box-row">
+                <div class="nome-disciplina">Geografia</div>
+                <div class="prazo">18/12/2023</div>
+            </div>
+        </section>
+
+        <footer class="box config-geral">
+            <div class="info">SIGAA | DTI - Diretoria da Tecnologia de Informação - IFAL - www.ifal.edu.br | Copyright ©
+                2023 - <span id="anoAtual"></span> - Vixz - v0.5 <span id="dataAtual"></span> <span
+                    id="horaAtual"></span></div>
+        </footer>
     </main>
 
     <!-- Scripts -->
     <script src="../js/semestreAtual.js"></script>
     <script src="../js/controladorBarraLateral.js"></script>
     <script src="../js/disciplinas.js"></script>
+    <script src="../js/trabalhos.js"></script>
 </body>
 
 </html>

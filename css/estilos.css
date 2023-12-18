@@ -1,21 +1,8 @@
-body {
-    background-color: #212121;
-    /* background-color: rgb(41, 41, 41); */
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas: "sidebar main";
-
-    /* overflow: hidden; */
-}
-
 /* Main*/
 main {
     display: block;
     padding: 20px 30px 30px 30px;
+    margin-left: 50px;
 }
 
 main > header {
@@ -40,12 +27,6 @@ main > header {
 
     padding-left: 20px;
     padding-right: 20px;
-}
-
-.info-instituicao {
-    background-color: #005227;
-    border-radius: 8px 8px 0px 0px;
-    padding: 10px 20px;
 }
 
 .info-aluno {
@@ -96,12 +77,14 @@ main > header {
 }
 
 .menu-lateral { 
-    
+    position: fixed;
+
     background-color: #161515;
     color: rgb(218, 218, 218);
 
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 
     z-index: 2;
     grid-area: sidebar;
@@ -136,29 +119,21 @@ main > header {
     transition: margin 0.3s;
 }
 
-span {
+.menu-lateral span {
     padding-right: 20px;
 }
 
 .menu-lateral.retraido .opcoes .opcoes-menu-lateral span,
-.modo-escuro.retraido {
+.modo-escuro.retraido, .menu-lateral.retraido .final span {
     display: none
 }
 
-.opcoes .opcoes-menu-lateral span:hover {
+.opcoes .opcoes-menu-lateral span:hover,  .final span:hover{
     color: #0d8d4b;
     cursor: pointer;
 }
 
 /* .final {} */
-
-/* Box */
-.box {
-    background-color: #161515;
-    color: white;
-
-    border-radius: 8px;
-}
 
 /* Perfil aluno */
 .perfil-aluno {
@@ -178,6 +153,7 @@ span {
     object-fit: cover;
     border-radius: 100px;
     max-height: 100%;
+    max-width: 100%;
 }
 
 .infos {
@@ -213,18 +189,6 @@ span {
     border-radius: 8px;
 }
 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    background-color: #005227;
-    padding: 0;
-
-    border-radius: 8px 8px 0px 0px;
-    padding: 10px 20px; 
-}
-
 .conteudo-atualizacoes {
     display: flex;
     flex-direction: column;
@@ -246,33 +210,6 @@ strong:hover {
 }
 
 /* Disciplinas */
-.disciplinas {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-    margin-top: 20px;
-    background-color: #161515;
-    border-radius: 8px;
-}
-
-.disciplinas header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    background-color: #005227;
-    padding: 0;
-
-    border-radius: 8px 8px 0px 0px;
-    padding: 10px 20px; 
-}
-
-.disciplina{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .lista-disciplinas{
     display: flex;
@@ -284,10 +221,35 @@ strong:hover {
     padding-bottom: 20px;
 }
 
+.disciplinas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-top: 20px;
+    background-color: #161515;
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+.disciplina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .nome-disciplina{
     cursor: pointer;
 }
 
 .nome-disciplina:hover{
     color: #14d16f;
+}
+
+/* Trabalhos */
+.trabalhos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
