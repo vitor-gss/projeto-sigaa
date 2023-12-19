@@ -64,3 +64,22 @@ footer{
 footer .info{
     text-align: center;
 }
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+    background-color: #161515;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    /* background-color: #3d3d3d; */
+    /* background: linear-gradient(#14d16f, #009cce); */
+    background: linear-gradient(#14d16f, #005227);
+
+    border-radius: 8px;
+}
+
+aside i{
+    cursor: pointer;
+}
