@@ -75,7 +75,7 @@ footer .info{
 ::-webkit-scrollbar-thumb{
     /* background-color: #3d3d3d; */
     /* background: linear-gradient(#14d16f, #009cce); */
-    background: linear-gradient(#14d16f, #005227);
+    background: linear-gradient(#0fb15d, #005227);
 
     border-radius: 8px;
 }
